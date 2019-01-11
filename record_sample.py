@@ -89,7 +89,7 @@ print("Recording ...")
 rec = Recorder(channels=2)
 filename = sys.argv[1]
 if filename != "":
-    filename == "default.wav"
+    filename = "default.wav"
 with rec.open(filename, 'wb') as recfile:
     recfile.record(duration=2.0)
 print("finished")
